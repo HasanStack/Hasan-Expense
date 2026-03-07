@@ -27,7 +27,7 @@ app.use(
   })
 );
 app.get("/", (req, res) => {
-  res.send("Daily Backend API Running 🚀");
+  res.send("Track Backend API Running 🚀");
 });
 
 app.use(express.json());
