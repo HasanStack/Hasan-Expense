@@ -1,4 +1,4 @@
-export const BASE_URL = "http://localhost:4000";
+export const BASE_URL = "https://expense-backend-t83y.onrender.com";
 
 export const API_PATHS = {
   AUTH: {
