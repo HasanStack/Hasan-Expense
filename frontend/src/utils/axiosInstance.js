@@ -32,10 +32,7 @@ axiosInstance.interceptors.response.use(
   (error) => {
     // Handle common errors globally
     if (error.response) {
-      if (error.response.status === 401) {
-        // Redirect to login page
-        window.location.href = "/login";
-      } else if (error.response.status === 500) {
+      if (error.response.status === 500) {
         console.error("Server error, please try again later.");
       }
     } else if (error.code === "ECONNABORTED") {
